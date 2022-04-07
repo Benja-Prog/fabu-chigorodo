@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>La Fabulosa Chigorodó</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/resources/images/logo.png" rel="icon">
+  <link href="/resources/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/resources/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/resources/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/resources/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/resources/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/resources/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/resources/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/resources/css/style-registro.css">
+
+  <!-- Template Main CSS File -->
+  <link href="/resources/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly - v3.7.0
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+57 3213646164</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> 24 Horas de la mejor Música</span></i>
+      </div>
+
+      <div id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+        <li><a class="nav-link scrollto active" href="/">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="login">Ingresar</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+        
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+<!-- ======= Hero Section ======= -->
+
+<section class="form-register">
+  <h4 class="registro">La Fabulosa Chigorodó</h4>
+  <form action="register" method="POST">
+  <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario" required>
+  <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+  <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellidos" required>
+  <input class="controls" type="text" name="movil" id="movil" placeholder="Ingrese celular o telefono" required>
+  <input class="controls" type="text" name="ciudad" id="ciudad" placeholder="Ingrese su Ciudad" required>
+  <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su Direcciòn" required>
+  <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" required>
+  <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña"required>
+  <p>Estoy de acuerdo con <a href="/terminos-condiciones">Terminos y Condiciones</a></p>
+  
+  <input class="botons" type="submit" value="Registrarme">
+  <p><a   href="login">¿Ya está registrado?</a></p>
+  <p><a   href="/">REGRESAR A INICIO</a></p>
+  </form>
+  
+</section>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<% if(typeof alert !="undefined") { %>
+  <script>
+      Swal.fire({
+          title: '<%= alertTitle  %>',
+          text: '<%= alertMessage %>',
+          icon: '<%= alertIcon %>',
+          showConfirmButton:'<%= showConfirmButton %>',
+          timer:  '<%= timer %>',
+      }).then(()=>{
+          window.location= '/<%= ruta %>'
+      })
+  </script>
+  <% } %>
+ <br>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    
+
+    <div class="container">
+      <div class="copyright">
+       
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/resources/vendor/aos/aos.js"></script>
+  <script src="/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/resources/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/resources/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/resources/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/resources/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/resources/js/main.js"></script>
+
+</body>
+
+</html>
